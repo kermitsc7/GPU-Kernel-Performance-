@@ -9,7 +9,7 @@ Totes les matrius tenen una mida de 2048 x 2048, utilitzant un nucli de GPU SGEM
 Per a cada combinació provada, es van realitzar 4 execucions i els seus resultats es presenten com a les 4 darreres columnes. 
 Tots els temps es mesuren en mil·lisegons. L'experiment es va executar en una estació de treball descriptori amb Ubuntu 16.04 Linux amb un Intel Core i5 (3,5 GHz),
 16 GB de RAM i una GPU NVidia Geforce GTX 680 4 GB GF580 GTX-1,5 GB.
-
+![A](pictures/tune.png)
 #### Informació dels atributs:
 Independent variables:
 1. `MWG`: per-matrix 2D tiling at workgroup level: {16, 32, 64, 128} (integer)   
