@@ -1,0 +1,10 @@
+Python packages required:
+
+ - Sklearn
+ - numpy
+ - pandas
+ - seaborn
+ - matplotlib
+ - math
+ - pickle
+ - intertools
