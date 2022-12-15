@@ -68,11 +68,11 @@ Classificació:
 
 | Model | Millors Hiperpàrametres | ROC score | Temps d'execució  (sec) | Separació de dades (test-train)
 | -----------| ----------------| --------| -----------| -------- |
-| Regressió logística | solver= sag  |  0.9297 | temps Grid: 21.57 | 30% - 70% |
-|Gradient boosting |      A        | 0.9884   | temps Grid: 1885.21 | 30% - 70% |
-| XGBoost | estàndars | A | A| 30%-70%|
+| Regressió logística | Grid-search  |  0.9297 | temps Grid: 21.57 | 30% - 70% |
+|Gradient boosting | Grid-search  | 0.9884   | temps Grid: 1885.21 | 30% - 70% |
+| XGBoost | estàndars | 0.9998 | 4.21  | 30%-70%|
 | Regressió logística | solver= sag  |  0.9100 | temps: 21.57 | 30% - 70% |
-|Gradient boosting |      A        | 0.9700   | temps: 1885.21 | 30% - 70% |
+|Gradient boosting |  learning_rate = 0.2  | 0.9700   | temps: 1885.21 | 30% - 70% |
 
 ## Demo
 Per realitzar la demostració cal descarregar el contingut de la carpeta 'Streamlit' situada al repositori de GitHub.
@@ -97,8 +97,7 @@ Com podem veure a la regressió, el model amb millors resultats és el `RandomFo
 Per tant, tot i que el model pugui ser més lent que algun altre, podem sacrificar temps per resultats i el millor model per predir les 
 nostres dades haurà de ser un `Random Forest Regression` amb els paràmetres estàndars del model.
 
-Dels dos classificadors aplicats el millor és el `GradientBoosting`, tot i que el temps d'execució és bastant més elevat, els resultats són
-molt més precisos. El temps del GradientBoosting és molt elevat durant el GridSearch si els paràmetres ja es tenen, aquest es redueix, que és el que ens interessa.
+Dels tres classificadors aplicats em quedo amb el `XGBoost`, l'`accuracy` obtinguda es pràcticament perfecte, igual que amb totes les altres mètriques. A més a més el temps d'execució es molt baix respecte els altres classificadors. Podria comparar-lo amb el `Gradient Boosting` pels resultats de les mètriques però pel temps d'execució el `XGboost` és el més ràpid.
 
 ## Idees per treballar en un futur
 Crec que seria interessant si el dataset obtingués dades d'altres processadors. D'aquesta manera es podria fer una comparativa més exhaustiva per mirar quin dona millors resultats i poder
