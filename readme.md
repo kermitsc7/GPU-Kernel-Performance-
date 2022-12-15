@@ -57,9 +57,9 @@ Regressió:
 
 | Model | Millors Hiperpàrametres | R^2 | Temps d'execució (sec) | Separació de dades (test-train)
 | -----------| ----------------| --------| -----------| -------- |
-| KNN |    k = 2       |0.91899 | 84.401 | 30% - 70% |
-| SGD |  alpha = 0.001 |  0.63258 |0.4142 | 30% - 70% |
-| RF  | criterion = 'squared_error', max_features= 1.0, n_estimators =100 | 0.99919 |46.120 | 30% - 70%| 
+| KNN |    k = 2       |0.9337 | 15.109 | 30% - 70% |
+| SGD |  alpha = 0.001 |  0.65534 |0.4710 | 30% - 70% |
+| RF  | criterion = 'squared_error', max_features= 1.0, n_estimators =100 | 0.99926 | 57.810 | 30% - 70%| 
 | KNN |    Grid-search      | 0.9337 | Temps Grid: 328.324 | 30% - 70%
 | SGD |  Grid-search |  0.63258 | Temps Grid: 3.408 | 30% - 70% 
 
@@ -68,11 +68,11 @@ Classificació:
 
 | Model | Millors Hiperpàrametres | ROC score | Temps d'execució  (sec) | Separació de dades (test-train)
 | -----------| ----------------| --------| -----------| -------- |
-| Regressió logística | Grid-search  |  0.9297 | temps Grid: 21.57 | 30% - 70% |
+| Regressió logística | Grid-search  | 0.9005 | temps Grid: 21.57 | 30% - 70% |
 |Gradient boosting | Grid-search  | 0.9884   | temps Grid: 1885.21 | 30% - 70% |
-| XGBoost | estàndars | 0.9998 | 4.21  | 30%-70%|
-| Regressió logística | solver= sag  |  0.9100 | temps: 21.57 | 30% - 70% |
-|Gradient boosting |  learning_rate = 0.2  | 0.9700   | temps: 1885.21 | 30% - 70% |
+| XGBoost | estàndars | 0.9999 | 4.21  | 30%-70%|
+| Regressió logística | solver= sag  |  0.9268 |5.39 | 30% - 70% |
+| Gradient boosting |  learning_rate = 0.2  | 0.9674   |   | 30% - 70% |
 
 ## Demo
 Per realitzar la demostració cal descarregar el contingut de la carpeta 'Streamlit' situada al repositori de GitHub.
@@ -98,6 +98,8 @@ Per tant, tot i que el model pugui ser més lent que algun altre, podem sacrific
 nostres dades haurà de ser un `Random Forest Regression` amb els paràmetres estàndars del model.
 
 Dels tres classificadors aplicats em quedo amb el `XGBoost`, l'`accuracy` obtinguda es pràcticament perfecte, igual que amb totes les altres mètriques. A més a més el temps d'execució es molt baix respecte els altres classificadors. Podria comparar-lo amb el `Gradient Boosting` pels resultats de les mètriques però pel temps d'execució el `XGboost` és el més ràpid.
+
+
 
 ## Idees per treballar en un futur
 Crec que seria interessant si el dataset obtingués dades d'altres processadors. D'aquesta manera es podria fer una comparativa més exhaustiva per mirar quin dona millors resultats i poder
