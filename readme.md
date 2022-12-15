@@ -71,8 +71,8 @@ Classificació:
 | Regressió logística | Grid-search  | 0.9005 | temps Grid: 21.57 | 30% - 70% |
 |Gradient boosting | Grid-search  | 0.9884   | temps Grid: 1885.21 | 30% - 70% |
 | XGBoost | estàndars | 0.9999 | 4.21  | 30%-70%|
-| Regressió logística | solver= sag  |  0.9268 |5.39 | 30% - 70% |
-| Gradient boosting |  learning_rate = 0.2  | 0.9674   |   | 30% - 70% |
+| Regressió logística | solver= sag  |  0.9268 | 5.39 | 30% - 70% |
+| Gradient boosting |  learning_rate = 0.2  | 0.9674  |  30.369 | 30% - 70% |
 
 ## Demo
 Per realitzar la demostració cal descarregar el contingut de la carpeta 'Streamlit' situada al repositori de GitHub.
