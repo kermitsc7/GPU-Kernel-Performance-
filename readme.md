@@ -60,8 +60,8 @@ Regressió:
 | KNN |    k = 2       |0.91899 | 84.401 | 30% - 70% |
 | SGD |  alpha = 0.001 |  0.63258 |0.4142 | 30% - 70% |
 | RF  | criterion = 'squared_error', max_features= 1.0, n_estimators =100 | 0.99919 |46.120 | 30% - 70%| 
-| KNN |    k = 2       |0.91899 | Temps Grid: 328.324 | 30% - 70%
-| SGD |  alpha = 0.001 |  0.63258 | Temps Grid: 3.408 | 30% - 70% 
+| KNN |    Grid-search      | 0.9337 | Temps Grid: 328.324 | 30% - 70%
+| SGD |  Grid-search |  0.63258 | Temps Grid: 3.408 | 30% - 70% 
 
 
 Classificació:
